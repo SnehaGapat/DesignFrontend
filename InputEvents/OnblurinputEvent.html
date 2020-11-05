@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Input Events</title>
+    <script >
+        function myfunc()
+        {
+            var a=document.getElementById("FirstNm");
+            a.value=a.value.toUpperCase();
+        }
+
+    </script>
+</head>
+<body>
+    <div style="margin-left: 20px;margin-top: 5px;margin-right: 20px;">
+ <div>
+     <h4>Enter Name :</h4>
+     <input type="text" id="FirstNm" onblur="myfunc()" style="color: rgb(80, 255, 153);border-color: black;"/>
+    <p style="font-size: larger;font-family: Verdana, Geneva, Tahoma, sans-serif;color: darkgoldenrod;">
+        This makes textbox value capital</p>
+    </div>
+</div>
+</body>
+</html>

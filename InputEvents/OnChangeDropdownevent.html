@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Input event on Dropdown list </title>
+     <script>
+        function preferBrowswer()
+        {
+           prefernce=document.forms[0].broswer.value;
+           //alert("You Prefer the Browser"+prefernce);
+           alert("You prefer browsing internet with " + prefernce);
+
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <div class="maindiv" style="background-color: chartreuse;margin-left: 50px;margin-bottom: 50px; margin-right: 150px;">
+            <div class="seconddiv" style="margin: 40px;">
+             <h5 style="margin-top: 5px;margin-bottom: 0px;">
+                 <b>Choose your Browser:</b>
+            </h5>
+            <select id="browser" onchange="preferBrowswer()" style="color:rgb(3, 0, 209); background-color:darkorange; margin-top: 2%;margin-bottom: 40px;">
+
+                <option value="Internet Explorer" >IE</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Mozilla">Mozilla</option>
+            </select>
+        </div>
+        </div>
+    </form>
+</body>
+</html>
